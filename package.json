@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "jest": "^26.6.3"
+  },
+  "name": "challenges",
+  "version": "1.0.0",
+  "description": "Coding Challenges",
+  "main": "index.js",
+  "repository": "git@github.com:philjdelong/challenges.git",
+  "author": "Phil DeLong <philjdelong@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  }
+}
