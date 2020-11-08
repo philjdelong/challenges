@@ -16,10 +16,6 @@ function pusher(element) {
     return stack = stack.concat([element])
 };
 
-pusher(2);
-pusher(4);
-console.log(pusher(6));
-
 const counter = () => {
     var counter = 0;
     stack.forEach(data => {
@@ -27,7 +23,6 @@ const counter = () => {
     });
     return counter;
 };
-console.log(counter());
 
 const popper = () => {
     if(counter() > 0) {
@@ -35,18 +30,10 @@ const popper = () => {
         return stack.pop();
     };
 };
-console.log(popper());
 
 const peeker = () => {
     return stack[counter() - 1]
 };
-console.log(peeker());
-
-pusher(23);
-pusher(12);
-pusher(74);
-pusher(2136);
-pusher(43);
 
 const maxxer = () => {
     var largest = 0
@@ -57,4 +44,16 @@ const maxxer = () => {
     })
     return largest;
 };
+
+pusher(2);
+pusher(4);
+pusher(23);
+pusher(12);
+pusher(74);
+pusher(2136);
+pusher(43);
+console.log(pusher(6));
+console.log(counter());
+console.log(popper());
+console.log(peeker());
 console.log(maxxer());
